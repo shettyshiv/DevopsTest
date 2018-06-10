@@ -426,3 +426,39 @@
   426  ls
   427  history
   428  history>commands
+  429  ls
+  430  cat commands
+  431  clear
+  432  git status
+  433  git add .
+  434  git status
+  435  touch a, b
+  436  ls
+  437  ls -lsrt
+  438  nano a,
+  439  git status
+  440  clear
+  441  git commit -m "This is the first commit"
+  442  git status
+  443  git commit -a  -m "This is the first commit"
+  444  git log
+  445  ma git
+  446  man git
+  447  git branch firstbranch
+  448  ls
+  449  git checkout firstbranch
+  450  touch x y z
+  451  ls
+  452  git status
+  453  git add -A
+  454  git status
+  455  git commit -m "add on another branch"
+  456  git commit -a -m "added on another branch"
+  457  git logs
+  458  git log
+  459  git checkout master
+  460  ls
+  461  git merge firstbranch
+  462  ls
+  463  clear
+  464  history > commands
