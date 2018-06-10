@@ -462,3 +462,59 @@
   462  ls
   463  clear
   464  history > commands
+  465  ls
+  466  clear
+  467  git checkout firstbrnach
+  468  git checkout firstbranch
+  469  ls
+  470  nano h
+  471  ls
+  472  git status
+  473  git add -A
+  474  git status
+  475  git commit -A -m "This is the third commit"
+  476  clear
+  477  git commit -A -m "This is the third commit"
+  478  git commit -a -m "This is the third commit"
+  479  git checkout master branch
+  480  git checkout master
+  481  git merge firstbranch
+  482  git checkout master
+  483  git rebase firstbranch
+  484  clera
+  485  clear
+  486  date
+  487  echo
+  488  echo shiv
+  489  echo "shiv
+exit
+exit
+quit
+exit
+
+
+  490  clear
+  491  ssh-keygen
+  492  cat /.ssh
+  493  ls
+  494  cd..
+  495  cd ..
+  496  ls
+  497  ls -a
+  498  ls /.ssh/r
+  499  ls /.ssh
+  500  cat .ssh/id_rsa.pub
+  501  clear
+  502  ssh -T shettyshiv@github.com
+  503  ssh -T git@github.com
+  504  git push origin firstbranch
+  505  cd gitfolder
+  506  git push origin firstbranch
+  507  git checkout master
+  508  git push origin master
+  509  git pull origin
+  510  git pull origin master
+  511  ls
+  512  cat a
+  513  cat a,
+  514  history > commands
