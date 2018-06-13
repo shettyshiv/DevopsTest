@@ -1,0 +1,932 @@
+    1  apt-get update
+    2  clear
+    3  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+    4  sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+    5  apt-get update
+    6  apt-get install-jenkins
+    7  apt-get install jenkins
+    8  clear
+    9  java -version
+   10  apt-get install openjdk-8-jre-headless
+   11  clear
+   12  exit
+   13  apt-get install maven
+   14  maven -v
+   15  mvn -v
+   16  path $JAVA_HOME
+   17  echo $JAVA_HOME
+   18  clear
+   19  date
+   20  time
+   21  ps
+   22  clear
+   23  echo @PATH
+   24  echo $PATH
+   25  CLEAR
+   26  claer
+   27  clear
+   28  docker --version
+   29  apt install docker.io
+   30  docker --version
+   31  docker pull alpine
+   32  ls
+   33  docker images
+   34  docker run -ti --name client alpine /bin/sh
+   35  docker ps
+   36  docker ps-a
+   37  docker ps -a
+   38  docker restart client
+   39  docker ps -a
+   40  docker attach client
+   41  docker run -ti --name client2 alpine /bash/sh
+   42  docker run -ti --name client2 alpine /bin/sh
+   43  docker ps
+   44  docker ps -a
+   45  docker attach client2
+   46  docker start client2
+   47  docker remove client2
+   48  docker rm client2
+   49  docker ps-a
+   50  docker ps -a
+   51  docker run -ti --name client2 alpine /bin/sh
+   52  ps
+   53  ls
+   54  docker ps -a
+   55  docker remove client2
+   56  docker rm client2
+   57  docker pull hello-world
+   58  docker images
+   59  docker run hello-world
+   60  docker ps -aq
+   61  docker rm -f $(docker ps -aq)
+   62  docker ps -a
+   63  docker rmi $(docker image -q)
+   64  docker rmi $(docker images -q)
+   65  docker images
+   66  exit
+   67  docker search centos
+   68  clear
+   69  docker search centos
+   70  yum install
+   71  apt-get install
+   72  apt-get upgrade
+   73  whoami
+   74  pwd
+   75  docker rmi
+   76  ipconfig
+   77  ifconfig
+   78  docker images
+   79  docker pull alpine
+   80  docker images
+   81  docker inspect alpine
+   82  docker inspect -f {{Architecture}} alpine
+   83  docker inspect -f {{.Architecture}} alpine
+   84  docker inspect -f {{.Image}} alpine
+   85  docker inspect -f {{.Type}} alpine
+   86  clear
+   87  history
+   88  history > commands.txt
+   89  cat commands.txt
+   90  history
+   91  ls
+   92  ls ~/.ssh
+   93  ls
+   94  ls -a
+   95  cd .ssh
+   96  ls
+   97  ls -a
+   98  cd ...
+   99  cd ..
+  100  clear
+  101  ssh-keygen -t rsa
+  102  ls ~/.ssh
+  103  cat ~/.ssh/id_rsa
+  104  clear
+  105  docker logs ssh
+  106  dcoker logs alpine
+  107  docker logs alpine
+  108  clear
+  109  exit
+  110  clear
+  111  ls -a
+  112  cd .ssh
+  113  ls
+  114  mkdir build
+  115  cd build
+  116  cp ~/.ssh/id_rsa.pub authorized_keys
+  117  clear
+  118  touch Dockerfile
+  119  nano Dockerfile
+  120  adduser -help
+  121  man adduser
+  122  nano Dockerfile
+  123  docker build -t ssh:alpine
+  124  docker build -t ssh:alpine .
+  125  nano Dockerfile
+  126  clear
+  127  docker build -t ssh:alpine .
+  128  cd ~
+  129  ls
+  130  nano Dockerfile
+  131  clear
+  132  nano Dockerfile
+  133  clear
+  134  ls
+  135  nano Dockerfile
+  136  clear
+  137  whoami
+  138  cd ~
+  139  whoami
+  140  ls
+  141  ps
+  142  ps --help
+  143  clear
+  144  exit
+  145  docker volume create jabberVolume
+  146  ls -q
+  147  ls
+  148  ls -qa
+  149  docker volume create --name jabber
+  150  ls -q
+  151  docker images
+  152  docker run -ti --name shiv -v jabber:/mnt alpine /bin/sh
+  153  docker ps
+  154  ps -l
+  155  ls -l
+  156  ps
+  157  ps -a
+  158  clear
+  159  ls
+  160  docker network ls
+  161  bridge0
+  162  clear
+  163  man docker
+  164  docker daemon
+  165  dockerd
+  166  cd /var/run
+  167  ls
+  168  ls -l
+  169  cat jenkins
+  170  cd jenkins
+  171  ls
+  172  cat jenkins.pid
+  173  cd ..
+  174  cd run
+  175  cat log
+  176  cd log
+  177  ls
+  178  cat journal
+  179  cd journal
+  180  ls
+  181  cd 0f2b895e0ed033d0d1b1fd6b044f96eb
+  182  ls
+  183  cat system.journal
+  184  clear
+  185  cd /
+  186  clear
+  187  docker network inspect bridge
+  188  cd /
+  189  pwd
+  190  whoami
+  191  clear
+  192  docker network inspect bridge
+  193  docker ls
+  194  docker ps
+  195  docker ls -a
+  196  claer
+  197  clear
+  198  docker ps -a
+  199  docker rm 93b46c97bc77        6ad10b5b1afa        
+  200  docker ps -a
+  201  docker restart shiv
+  202  docker ps
+  203  docker network inspect bridge
+  204  clear
+  205  docker p
+  206  docker ps
+  207  docker stop alpine
+  208  docker stop shiv
+  209  docker ps -a
+  210  docker rm shiv
+  211  docker ps -a
+  212  docker images
+  213  docker images rm alphine
+  214  docker images rm alpine
+  215  docker images
+  216  docker images rm 3fd9065eaf02        
+  217  clear
+  218  git clone https://github.com/simplilearn-devops/devops-lesson-2
+  219  git
+  220  clear
+  221  ls
+  222  cd devops-lesson-2
+  223  cd lab-2.5
+  224  ls
+  225  docker run -it --name centos centos bin/bash
+  226  apt-install  -y net-tools
+  227  apt-install
+  228  clear
+  229  ls -a
+  230  cd .nano
+  231  ls
+  232  ls -a
+  233  cd ..
+  234  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+  235  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+  236  apt-get update
+  237  apt-get install jenkins
+  238  jenkins
+  239  apt-get install jenkins
+  240  sudo systemctl start jenkins
+  241  sudo systemctl status jenkins
+  242  sudo ufw allow 8080
+  243  sudo ufw status
+  244  ufw status
+  245  sudo ufw allow OpenSSH
+  246  sudo ufw enable
+  247  ufw status
+  248  jenkins
+  249  jenkins -help
+  250  clear
+  251  ls -a
+  252  cd .ssh
+  253  cd ..
+  254  ufw status
+  255  clear
+  256  date
+  257  time
+  258  user
+  259  pwd
+  260  learn
+  261  man
+  262  man sudo
+  263  man pwd
+  264  pwd -L
+  265  clear
+  266  jenkins
+  267  exit
+  268  ls
+  269  git
+  270  git -help
+  271  git man
+  272  man git
+  273  git status
+  274  ls
+  275  cd ..
+  276  ls
+  277  mkdir repo
+  278  cd repo
+  279  git init
+  280  git status
+  281  touch a.txt
+  282  touch 
+  283  touch b
+  284  ls
+  285  cat b
+  286  nano b
+  287  cat b
+  288  ls
+  289  git status
+  290  git commit
+  291  git add
+  292  git add .
+  293  git status
+  294  exit
+  295  clear
+  296  apt-get update
+  297  git clone https://github.com/simplilearn-devops/devops-lesson-3
+  298  ls
+  299  cd devops-lesson-3/
+  300  cat Dockerfile
+  301  ls
+  302  cd lab-3.1
+  303  cat Dockerfile
+  304  docker build -t jtrac
+  305  ls
+  306  cat readme
+  307  cat readme.d
+  308  cat readme.md
+  309  cat README.md
+  310  nano README.md
+  311  cler
+  312  clear
+  313  docker build -t jtrac
+  314  docker pull jtrac
+  315  docker images
+  316  docker ps
+  317  docker run 96c860abce7e        
+  318  docker ps
+  319  docker ps -a
+  320  docker stop 96c860abce7e         
+  321  docker stop 96c860abce7e        
+  322  docker stop centos
+  323  docker stop 65612b126c5e        
+  324  docker build jtrac
+  325  clear
+  326  docker build jtrac
+  327  ls
+  328  docker pull jtrac
+  329  docker run jtrac
+  330  docker pull --help
+  331  docker pull jtrac
+  332  clear
+  333  cd ..
+  334  cd lab-3.2
+  335  ls
+  336  cat Dockerfile
+  337  docker build -t svn
+  338  docker pull svn
+  339  docker
+  340  man docker
+  341  docker info
+  342  docker build svn
+  343  ls
+  344  cat run_svn
+  345  clear
+  346  ls
+  347  docker pull centols
+  348  docker pull centos
+  349  docker pull svn
+  350  docker svn-server
+  351  docker pull svn-server
+  352  docker pull krisdavison/svn-server
+  353  docker images
+  354  docker run krisdavison/svn-server
+  355  ps
+  356  dokcer ps
+  357  docker ps
+  358  docker -ps
+  359  docker ps -a
+  360  docker build -t krisdavison/svn-server
+  361  docker build  krisdavison/svn-server
+  362  ls
+  363  cat Dockerfile
+  364  docker images
+  365  cd ~
+  366  ls
+  367  mkdir Hello
+  368  cd Hello
+  369  nano Hello.java
+  370  ls
+  371  javac Hello.java
+  372  java --version
+  373  java -version
+  374  cd..
+  375  cdcdcdcccccccclear
+  376  clear
+  377  ls
+  378  cd ..
+  379  ls
+  380  cd ..
+  381  ls
+  382  cd ~
+  383  ls
+  384  rm -r ~/.ssh/known_hosts
+  385  ls
+  386  docker pull jenkins
+  387  docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home/ jenkins
+  388  docker run -d --name jenkins -p 8090:8090 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home/ jenkins
+  389  docker ls
+  390  docker ls -a
+  391  docker ps
+  392  docker ps -a
+  393  docker stop jenkins                  
+  394  docker stop 65612b126c5e        90baf08f9cef        4c0514e4c555        
+  395  docker run -d --name jenkins -p 8090:8090 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home/ jenkins
+  396  docker -rm
+  397  docker ls
+  398  docker ps
+  399  docker ps -a
+  400  docker rm de7a79452241        
+  401  docker rm 4c0514e4c555        
+  402  docker rm 65612b126c5e        
+  403  docker rm 90baf08f9cef        
+  404  docker run -d --name jenkins -p 8090:8090 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home/ jenkins
+  405  docker logs jenkins
+  406  cd /var/jenkins_home
+  407  docker ps
+  408  docker ps -a
+  409  cd /var
+  410  ls
+  411  mkdir gitfolder
+  412  cd git folder
+  413  cd gitfolder/
+  414  ls
+  415  git init
+  416  ls
+  417  ls -a
+  418  ls /.git
+  419  cd .git
+  420  ls
+  421  cd..
+  422  cd ..
+  423  git remote add "https://github.com/shettyshiv/DevopsTest.git"
+  424  git remote add origin "https://github.com/shettyshiv/DevopsTest.git"
+  425  git pull origin master
+  426  ls
+  427  history
+  428  history>commands
+  429  ls
+  430  cat commands
+  431  clear
+  432  git status
+  433  git add .
+  434  git status
+  435  touch a, b
+  436  ls
+  437  ls -lsrt
+  438  nano a,
+  439  git status
+  440  clear
+  441  git commit -m "This is the first commit"
+  442  git status
+  443  git commit -a  -m "This is the first commit"
+  444  git log
+  445  ma git
+  446  man git
+  447  git branch firstbranch
+  448  ls
+  449  git checkout firstbranch
+  450  touch x y z
+  451  ls
+  452  git status
+  453  git add -A
+  454  git status
+  455  git commit -m "add on another branch"
+  456  git commit -a -m "added on another branch"
+  457  git logs
+  458  git log
+  459  git checkout master
+  460  ls
+  461  git merge firstbranch
+  462  ls
+  463  clear
+  464  history > commands
+  465  ls
+  466  clear
+  467  git checkout firstbrnach
+  468  git checkout firstbranch
+  469  ls
+  470  nano h
+  471  ls
+  472  git status
+  473  git add -A
+  474  git status
+  475  git commit -A -m "This is the third commit"
+  476  clear
+  477  git commit -A -m "This is the third commit"
+  478  git commit -a -m "This is the third commit"
+  479  git checkout master branch
+  480  git checkout master
+  481  git merge firstbranch
+  482  git checkout master
+  483  git rebase firstbranch
+  484  clera
+  485  clear
+  486  date
+  487  echo
+  488  echo shiv
+  489  echo "shiv
+  490  exit
+  491  exit
+  492  quit
+  493  exit
+  494  clear
+  495  ssh-keygen
+  496  cat /.ssh
+  497  ls
+  498  cd..
+  499  cd ..
+  500  ls
+  501  ls -a
+  502  ls /.ssh/r
+  503  ls /.ssh
+  504  cat .ssh/id_rsa.pub
+  505  clear
+  506  ssh -T shettyshiv@github.com
+  507  ssh -T git@github.com
+  508  git push origin firstbranch
+  509  cd gitfolder
+  510  git push origin firstbranch
+  511  git checkout master
+  512  git push origin master
+  513  git pull origin
+  514  git pull origin master
+  515  ls
+  516  cat a
+  517  cat a,
+  518  history > commands
+  519  git add .
+  520  git commit -a -m "I am putting my git commands on the git hub directory"
+  521  git push origin master
+  522  clear
+  523  ls
+  524  rm https-github.com-saurabh0010-houselannister-master.zip 
+  525  git log
+  526  git checkout b68fecf04bb1d5ce3fed978a28f119bd176d8950 a,.txt
+  527  git checkout b68fecf04bb1d5ce3fed978a28f119bd176d8950 a,
+  528  cat a
+  529  cat a,
+  530  exit
+  531  man docker
+  532  clear
+  533  jenkins -version
+  534  git -version
+  535  docker -version
+  536  docker --version
+  537  git --version
+  538  jenkins --version
+  539  apt-get update
+  540  clear
+  541  java --version
+  542  ufw status
+  543  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+  544  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+  545  apt-get update
+  546  apt-get install jenkins
+  547  jenkins -version
+  548  systemctl start jenkins
+  549  systemctl status jenkins
+  550  ls
+  551  ls -lart
+  552  ps
+  553  ufw status
+  554  systemctl status jenkins
+  555  ls
+  556  ls -a
+  557  cd jenkins
+  558  ls -a
+  559  cd gitfolder
+  560  cd ..
+  561  cd gitfolder
+  562  ls
+  563  cd..
+  564  cd ..
+  565  cd jenkins
+  566  ls
+  567  systemctl status jenkins
+  568  jenkins
+  569  jenkins --version
+  570  docker --version
+  571  ufw allow 8080
+  572  sudo ufw allow OpenSSH
+  573  sudo ufw enable
+  574  ls
+  575  ls -a
+  576  pwd
+  577  ps -ef
+  578  ps -ef | grep jenkins
+  579  clear
+  580  ps -ef | grep jenkins
+  581  cd ..
+  582  pwd
+  583  ls -a
+  584  cd sur
+  585  cd usr
+  586  ls
+  587  cd ..
+  588  cd var/gog
+  589  cd var/log
+  590  ls
+  591  cd jenkins
+  592  ls
+  593  cat jenkins.log
+  594  clear
+  595  ls
+  596  cat jenkins.log.1
+  597  cat jenkins.log
+  598  clear
+  599  cd..
+  600  cd ..
+  601  cd lib
+  602  ls
+  603  cd jenkins
+  604  ls
+  605  cd secrets
+  606  ls
+  607  cat initialAdminPassword 
+  608  clear
+  609  ls
+  610  cd ..
+  611  ls
+  612  cat config.xml 
+  613  clear
+  614  ls
+  615  cat jenkins.cli.xml
+  616  cat jenkins.CLI.xml 
+  617  ls
+  618  cd logs
+  619  ls
+  620  cd task
+  621  cd tasks
+  622  ls
+  623  cd ..
+  624  ls
+  625  cd users
+  626  ls
+  627  cd admin
+  628  ls
+  629  cat config.xml
+  630  exit
+  631  clear
+  632  ls
+  633  ls -a
+  634  cd ..
+  635  ls
+  636  ls var
+  637  cd var
+  638  ls
+  639  cd log
+  640  ls
+  641  cd jenkins
+  642  ls
+  643  cat jenkins.log
+  644  ifconfig
+  645  cat jenkins.log
+  646  cd /
+  647  pwd
+  648  jenkins -version
+  649  docker -version
+  650  docker --version
+  651  jenkins --version
+  652  net start jenkins
+  653  apt install samba-common-bin
+  654  net start jenkins
+  655  oupmap        Manage group mappings
+  656  net sam             Functions on the SAM database
+  657  net validate        Validate username and password
+  658  net groupmember     Modify group memberships
+  659  net admin           Execute remote command on a remote OS/2 server
+  660  net service         List/modify running services
+  661  net password        Change user password on target server
+  662  net start jenkins
+  663  java -jar jenkins.war
+  664  service jenkins status
+  665  cd usr
+  666  cd bin
+  667  cd java
+  668  ls
+  669  cd java
+  670  /usr/bin/java -Djava.awt.headless=true -jar /usr/share/jenkins/jenkins.war --webroot=/var/cache/jenkins/war --h
+  671  service jenkins restart
+  672  service jenkins status
+  673  cd ..
+  674  cd..
+  675  cd ..
+  676  ls
+  677  ls var
+  678  cd var
+  679  ls
+  680  cd log
+  681  ls
+  682  cd jenkins
+  683  ls 
+  684  cd jenkins.log
+  685  ls
+  686  cd ..
+  687  ls
+  688  cd ..
+  689  ls
+  690  cd usr
+  691  ls
+  692  cd ..
+  693  ls
+  694  cd lib
+  695  ls
+  696  cd ..
+  697  cat Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  698  cd users
+  699  ls
+  700  cd var
+  701  ls
+  702  cd lib
+  703  ls
+  704  cd ..
+  705  ls
+  706  cd log
+  707  ls
+  708  cd jenkins
+  709  ls
+  710  cat jenkins.log
+  711  cd..
+  712  cd ..
+  713  cd lib
+  714  cd jenkins
+  715  ls
+  716  cd secrets
+  717  ls
+  718  cat initialAdminPassword 
+  719  exit
+  720  cd jenkins
+  721  ls
+  722  ls -a
+  723  cd ..
+  724  ls -a
+  725  cd ..
+  726  ls
+  727  cd lib
+  728  ls -a
+  729  cd ..
+  730  cd usr
+  731  ls -a
+  732  cd bin
+  733  ls -a
+  734  cd ..
+  735  pwd
+  736  doskey
+  737  docker --version
+  738  jenkins --version
+  739  jenkins
+  740  rmdir jenkins
+  741  ls
+  742  cd ~
+  743  ls
+  744  pwd
+  745  rm jenkins
+  746  rmdir jenkins
+  747  ls
+  748  cat /var/lib/jenkins/secrets/initialAdminPassword 
+  749  history
+  750  git clone https://github.com/simplilearn-devops/devops-lesson-2
+  751  ls
+  752  cd devops-lesson-2
+  753  ls
+  754  cd lab-2.5
+  755  docker run -t --name centos centos1 /bin/bash
+  756  docker images
+  757  docker ps
+  758  docker run -it --name centos centos /bin/bash
+  759  docker commit centos centos-net
+  760  docker images
+  761  docker rm centos
+  762  docker images
+  763  docker imsages
+  764  docker images
+  765  docker ps
+  766  docker ps -a
+  767  docker stop e1c89d582830        
+  768  docker ps -a
+  769  docker run -it --name jenkins jenkins /bin/bash
+  770  docker restart -it --name jenkins jenkins /bin/bash
+  771  docker resume -t --name jenkins jenkins /bin/bash
+  772  docker resume -it --name jenkins jenkins /bin/bash
+  773  docker ps -a
+  774  docker remove e1c89d582830        
+  775  docker rm e1c89d582830        
+  776  docker run -it --name jenkins jenkins /bin/bash
+  777  ls
+  778  pwd
+  779  cd ..
+  780  ls
+  781  docker images
+  782  docker rm 96106cbe3107        
+  783  docker network create exnet
+  784  docker network ls
+  785  docker network inspect exnet
+  786  ifconfig
+  787  cat /etc/hosts
+  788  docker run -it --name centos centos-net /bin/bash
+  789  ls
+  790  cd devops-capstone/lab-2
+  791  mkdir capstone
+  792  cd capstone
+  793  ./runserver
+  794  vncserver
+  795  cd..
+  796  cd ..
+  797  rmdir capstone
+  798  ls
+  799  cd devops-lesson-3/lab-3.1
+  800  cat Dockerfile
+  801  docker build -t jtrac
+  802  docker pull jtrac
+  803  ls
+  804  cat README.md
+  805  docker build -t jtrac
+  806  docker build  jtrac
+  807  docker run -d --name jtrac -p 8080:80 jtrac
+  808  docker imsages
+  809  docker images
+  810  docker pull jtrac
+  811  cat Dockerfile
+  812  nano Dockerfile
+  813  cd ~
+  814  ls
+  815  cd Hello
+  816  ls
+  817  nano Hello.java 
+  818  cd..
+  819  cd ..
+  820  ls
+  821  cd urs
+  822  cd usr
+  823  cd lib
+  824  cd jenkins
+  825  ls
+  826  cd ..
+  827  ls
+  828  cd local
+  829  ls
+  830  cd lib
+  831  ls
+  832  cd ..
+  833  ls
+  834  cd lib
+  835  ls
+  836  history
+  837  cat Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  838  cd..
+  839  cd ..
+  840  ls
+  841  pwd
+  842  cat Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  843  ls
+  844  cat Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  845  cd var
+  846  ls
+  847  cd lib
+  848  ls
+  849  cd jenkins
+  850  ls
+  851  cd secrets
+  852  ls
+  853  cat initialAdminPassword 
+  854  cd 
+  855  cd ~
+  856  ls
+  857  pwd
+  858  cd hello
+  859  pwd
+  860* 
+  861  cd Hello
+  862  ls
+  863  pwd
+  864  who-am-i
+  865  whoami
+  866  pwd
+  867  ls
+  868  cd tmp
+  869  cat /var/lib/jenkins/workspace/Hello-World
+  870  cd ..
+  871  cat /var/lib/jenkins/workspace/Hello-World
+  872  cat /var/lib/jenkins/workspace/Hello-World/
+  873  cd /var/lib/jenkins/workspace/Hello-World
+  874  ls
+  875  ls -a
+  876  cd !
+  877  cd .
+  878  cd 
+  879  ls
+  880  pwd
+  881  ls
+  882  pwd
+  883  ls /root/Hello
+  884  cd /root/Hello
+  885  cd /var/lib/jenkins
+  886  ls
+  887  cd /root/Hello
+  888  ls
+  889  cd /var/lib/jenkins
+  890  cat /root/Hello
+  891  cat /root/Hello/Hello.java 
+  892  cp /root/Hello/Hello.java 
+  893  cp /root/Hello/Hello.java .
+  894  ls
+  895  java -version
+  896  javac Hello.java
+  897  cd .
+  898  cd ~
+  899  ls
+  900  git clone https://github.com/simplilearn-devops/devops-lesson-6
+  901  ls
+  902  cd devops-lesson-6
+  903  docker create network puppet
+  904  docker network ls
+  905  docker create network puppet
+  906  docker create network puppetdocker pull puppet/puppetserver-standalone
+  907  docker pull puppet/puppetserver-standalone
+  908  docker pull puppet/puppet-agent-alpine
+  909  docker images
+  910  docker run --net exnet -d --name puppetserver --hostname puppet
+  911  docker network create exnet
+  912  docker network connect exnet
+  913  docker network connect exnet puppet
+  914  docker ps
+  915  docker ps -a
+  916  docker rm d3df6d7add81        
+  917  docker ps -a
+  918  dockerclear
+  919  clear
+  920  docker network create puppet
+  921  docker run --net puppet -d --name puppetserver --hostname puppet
+  922  docker run --net puppet -d --name puppetserver --hostname puppet puppet/puppetserver-standalone
+  923  docker logs puppetserver
+  924  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine
+  925  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine resource package
+  926  ls
+  927  docker ps
+  928  docker rm -f puppetserver
+  929  docker ps
+  930  docker ps -a
+  931  docker images
+  932  history > commands1
